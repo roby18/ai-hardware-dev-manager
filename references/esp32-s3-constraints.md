@@ -24,7 +24,7 @@
 |---|---|
 | GPIO26–GPIO32 | PSRAM/Flash 数据线（Octal/Quad 配置相关） |
 | GPIO33–GPIO37 | PSRAM/Flash 相关（Octal SPI） |
-| GPIO47/48 | SPICLK_P / SPICLK_N（Flash 时钟）——**本项目 S1–S8 未用，但官方表与原理图确认 47/48 已被占用** |
+| GPIO47/48 | SPICLK_P / SPICLK_N（Flash 时钟）——已被占用，不得作普通 IO |
 | 部分封装 | GPIO37/38 等视封装与 Flash 位宽 |
 
 > 反查方法：写引脚前查官方 `pin_mux`/datasheet 的"IO MUX"与存储接线表；与硬件档案"引脚占用统计"交叉比对。
